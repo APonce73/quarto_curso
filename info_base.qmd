@@ -1,0 +1,111 @@
+---
+title: "Cómo escribir un documento en Quarto"
+subtitle: "Paso a paso"
+
+authors:
+- name: Alejandro Ponce Mendoza
+  affiliation: CONABIO
+- name: Antonio
+  affiliation: POLITÉCNICO
+
+output: 
+  html
+  
+execute: 
+  warning: false
+  message: false
+  echo: false
+
+bibliography: bibliografia.bib
+csl: plos-one.csl
+---
+
+## Estructura de un documento en `Quarto`
+
+Quarto tiene tres partes:
+
+-   Yamal
+-   Código o \`schunk\`
+-   Escrito
+
+## `Yamal`
+
+El título esta escrito en la parte del `Yamal`. Esta es la base de la estructura que tendrá nuestro escrito. Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+# Código
+
+El código se escriben tres acentos graves (\`\`\`) y después el tipo de programa que se desea utilizar:
+
+-   para R es: \`\`\`{r}
+-   para R es: \`\`\`{python}
+-   para R es: \`\`\`{julia}\
+-   para R es: \`\`\`{ojs}
+
+## Ejemplo para una tabla
+
+Como pueden ver en la tabla @tbl-uno se pueden acomodar de forma distinta
+
+```{r}
+#| label: tbl-uno
+#| tbl-cap: Autos
+
+
+library(flextable)
+library(tidyverse)
+library(ggplot2)
+data("mtcars")
+
+
+uno <- mtcars %>% 
+  #rownames_to_column(var = "Autos") %>% 
+  mutate(cyl = as.factor(cyl)) %>% 
+  group_by(cyl) %>% 
+  summarise_all(mean)
+
+flextable(uno)
+
+```
+
+El promedio de los datos de hp es **`r round(mean(mtcars$hp), 1)`**
+
+# Ahora hacer una figura
+
+Ahora haremos una figura con los mismos datos como @fig-line
+
+```{r}
+#| label: fig-line
+#| fig-cap: "Scatter plot"
+
+
+ggplot(data = mtcars) +
+  geom_point(aes(x = mpg, y = hp, size = carb), colour = "red", alpha = 0.5) +
+  theme_minimal()
+  
+
+```
+
+# Aquí incertar una imagen
+
+Para incertar una imágen sólo tenemos que buscarla en nuestra computadora y pegarla:
+
+![gatos](figuras/gato1.JPG){#fig-gato width="50%"}
+
+y con esta intrucción la figura gato quedaría aquíi: @fig-gato
+
+![gatos](figuras/gato2.JPG){#fig-gato1 width="50%"}
+
+y la siguiente figura es: @fig-gato1
+
+Y ahora un dolor de cabeza de todos los días las citas bibliográficas:
+
+Sólo hay que hacer un documento tipo "bib". Paso a paso: - Hacer un documento bib. - Adicionar la cita en el formta *BiBTex*
+
+Aquí un ejemplo con @change2007climate. también se puede citar entre paréntesis [@change2007climate]
+
+Sobre agrobiodiversidad [@kahane2013agrobiodiversity]
+
+y un paper que yo tengo muchas citas [@conde2005impacts]
+
+y ahora cambiar el estilo de las citas: ir al siguiente de [Zotero](https://www.zotero.org/styles)
+
+Cambiar a documento pdf y word
