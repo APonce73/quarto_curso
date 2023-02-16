@@ -5,9 +5,22 @@ Si quieres conocer más sobre quarto visita su [sitio](https://quarto.org).
 
 `Quarto`te ayudará a poder controlar mejor tus escritos y al mismo tiempo compartirlos con otras personas de forma segura en formatos **PDF**, **Word** o **HTML** 
 
-![Quarto][def]
+![Como trabaja Quarto][def] 
 
-[def]: figuras/Imagen_1.png
+[def]: figuras/imagen_1.png
+
+Esta imágen de Allison Horst se pueden ver en su [sitio](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)
+
 {{< caption >}}Souce{{< caption >}}
 
-`Quarto` tiene tres importantes partes: `Yaml`, texto y el código (`schunk`). En el `Yaml`uno puede controla el estilo y lo que uno va a poner como
+`Quarto` tiene tres importantes partes:  
+- `Yaml`. Aquí se controla de forma general el estilo con el que va salir el documento. Permite agregar muchas características que facilitan la visualización y navegación en el documento.    
+- `Texto`. Ésta sección es igual que escribir en cualquier procesador de palabras.  
+- `Código`. También se conoce como el `schunk`. podemos utilizar código tipo `r`, `phyton`, `julia` y `observable`. 
+
+
+Para poder ver el producto final sólo tienes que descargar o clonar este repositorio y correrlo en tu espacio de trabajo preferido: `Rstudio`, `VCode`, `Jupyter`, `Neovim` o  
+
+![Como trabaja Quarto][def1] 
+
+[def1]: figuras/imagen_2.png
