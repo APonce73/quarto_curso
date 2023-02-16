@@ -1,11 +1,11 @@
-# Que es Quarto
+# ¿Qué es Quarto?
 Quarto es un sistema creado en formato `Pandoc` y tiene muchas características de `Rmarkdown` y/o `markdown`.  
 
 Si quieres conocer más sobre quarto visita su [sitio](https://quarto.org).   
 
 `Quarto`te ayudará a poder controlar mejor tus escritos y al mismo tiempo compartirlos con otras personas de forma segura en formatos **PDF**, **Word** o **HTML** 
 
-![Como trabaja Quarto][def] 
+![figura 1][def] 
 
 [def]: figuras/imagen_1.png
 
@@ -21,6 +21,6 @@ Esta imágen de Allison Horst se pueden ver en su [sitio](https://allisonhorst.c
 
 Para poder ver el producto final sólo tienes que descargar o clonar este repositorio y correrlo en tu espacio de trabajo preferido: `Rstudio`, `VCode`, `Jupyter`, `Neovim` o  
 
-![Como trabaja Quarto][def1] 
+![Figura 2][def1] 
 
 [def1]: figuras/imagen_2.png
