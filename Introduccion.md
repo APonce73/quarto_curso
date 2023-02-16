@@ -5,7 +5,7 @@ Si quieres conocer más sobre quarto visita su [sitio](https://quarto.org).
 
 `Quarto`te ayudará a poder controlar mejor tus escritos y al mismo tiempo compartirlos con otras personas de forma segura en formatos **PDF**, **Word** o **HTML** 
 
-![figura 1][def] 
+![Figura 1][def] 
 
 [def]: figuras/imagen_1.png
 
