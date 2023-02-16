@@ -7,11 +7,10 @@ Si quieres conocer más sobre quarto visita su [sitio](https://quarto.org).
 
 ![Figura 1][def] 
 
-[def]: figuras/imagen_1.png
+[def]: figuras/Imagen_1.png
 
 Esta imágen de Allison Horst se pueden ver en su [sitio](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)
 
-{{< caption >}}Souce{{< caption >}}
 
 `Quarto` tiene tres importantes partes:  
 - `Yaml`. Aquí se controla de forma general el estilo con el que va salir el documento. Permite agregar muchas características que facilitan la visualización y navegación en el documento.    
