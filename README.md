@@ -18,7 +18,7 @@ Esta imágen de Allison Horst se pueden ver en su [sitio](https://allisonhorst.c
 - `Código`. También se conoce como el `schunk`. podemos utilizar código tipo `r`, `phyton`, `julia` y `observable`. 
 
 
-Para poder ver el producto final sólo tienes que descargar o clonar este repositorio y correrlo en tu espacio de trabajo preferido: `Rstudio`, `VCode`, `Jupyter`, `Neovim` o  
+Para poder ver el producto final sólo tienes que descargar o clonar este repositorio y correrlo en tu espacio de trabajo preferido: `Rstudio`, `VCode`, `Jupyter`, `Neovim` entre otros.
 
 ![Figura 2][def1] 
 
