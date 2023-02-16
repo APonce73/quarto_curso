@@ -7,5 +7,7 @@ Si quieres conocer más sobre quarto visita su [sitio](https://quarto.org).
 
 ![Quarto][def]
 
-[def]: Figuras/Imagen_1.png
+[def]: figuras/Imagen_1.png
 {{< caption >}}Souce{{< caption >}}
+
+`Quarto` tiene tres importantes partes: `Yaml`, texto y el código (`schunk`). En el `Yaml`uno puede controla el estilo y lo que uno va a poner como
